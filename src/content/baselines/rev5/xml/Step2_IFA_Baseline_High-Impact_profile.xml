@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/usnistgov/OSCAL/release-1.0/xml/schema/oscal_complete_schema.xsd" schematypens="http://www.w3.org/2001/XMLSchema" title="OSCAL complete schema"?>
+<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0"
+         uuid="6dfd6ce5-98f4-4a08-a2f5-46f21bcc25e4">
+   <metadata>
+      <title>Important Federal Agency Baseline - High Impact</title>
+      <published>2022-02-26T12:00:00.000005Z</published>
+      <last-modified>2022-02-26T12:00:00.000005Z</last-modified>
+      <version>0.0.1</version>
+      <oscal-version>1.0.1</oscal-version>
+   </metadata>
+   <import href="https://raw.githubusercontent.com/usnistgov/oscal-content/main/nist.gov/SP800-53/rev5/xml/NIST_SP-800-53_rev5_catalog.xml">
+      <include-all/>
+   </import>
+   <merge>
+      <combine method="keep"/>
+      <as-is>true</as-is>
+   </merge>
+   <back-matter/>
+</profile>
