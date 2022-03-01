@@ -1,0 +1,34 @@
+{
+  "profile": {
+    "uuid": "82961a44-26d5-416e-81e1-d50b7dff431a",
+    "metadata": {
+      "title": "Important Federal Agency Baseline - Moderate Impact",
+      "published": "2022-02-26T12:00:00.000005Z",
+      "last-modified": "2022-02-26T12:00:00.000005Z",
+      "version": "0.0.1",
+      "oscal-version": "1.0.1"
+    },
+    "imports": [
+      {
+        "href": "https://raw.githubusercontent.com/usnistgov/oscal-content/main/nist.gov/SP800-53/rev5/xml/NIST_SP-800-53_rev5_catalog.xml",
+        "include-all": {},
+        "exclude-controls": [
+          {
+            "with-ids": [
+              "ac-1",
+              "ac-2",
+              "ac-3"
+            ]
+          }
+        ]
+      }
+    ],
+    "merge": {
+      "combine": {
+        "method": "keep"
+      },
+      "as-is": true
+    },
+    "back-matter": {}
+  }
+}
