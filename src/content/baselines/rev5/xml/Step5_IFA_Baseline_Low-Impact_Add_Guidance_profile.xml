@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/usnistgov/OSCAL/release-1.0/xml/schema/oscal_complete_schema.xsd" schematypens="http://www.w3.org/2001/XMLSchema" title="OSCAL complete schema"?>
+<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0"
+    uuid="d0ff2854-1b4c-4d93-a74f-8300fc0091eb">
+    <metadata>
+        <title>Important Federal Agency Baseline - Low Impact</title>
+        <published>2022-02-26T12:00:00.000005Z</published>
+        <last-modified>2022-02-26T12:00:00.000005Z</last-modified>
+        <version>0.0.1</version>
+        <oscal-version>1.0.1</oscal-version>
+    </metadata>
+    <import href="https://raw.githubusercontent.com/usnistgov/oscal-content/main/nist.gov/SP800-53/rev5/xml/NIST_SP-800-53_rev5_catalog.xml">
+        <include-controls>
+            <with-id>ac-1</with-id>
+        </include-controls>
+    </import>
+    <merge>
+        <combine method="keep"/>
+        <as-is>true</as-is>
+    </merge>
+    <modify>
+        <alter control-id="ac-1">
+            <add position="ending" by-id="ac-1_smt">
+                <part id="ac-1_ifa" name="item">
+                    <part id="ac-1_ifa_gdn.1" name="guidance">
+                        <prop name="label" value="Guidance:"/>
+                        <p>Important Federal Agency has specific guidance around the application of NIST 800-53 Revision 5 AC-1 for its systems.</p>
+                    </part>
+                </part>
+            </add>
+        </alter>
+    </modify>
+    <back-matter/>
+</profile>
+
