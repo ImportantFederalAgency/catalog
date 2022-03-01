@@ -1,0 +1,25 @@
+{
+  "profile": {
+    "uuid": "f24d0137-ad53-4157-ab2e-c0be6558eaa3",
+    "metadata": {
+      "title": "Important Federal Agency Baseline - High Impact",
+      "published": "2022-02-26T12:00:00.000005Z",
+      "last-modified": "2022-02-26T12:00:00.000005Z",
+      "version": "0.0.1",
+      "oscal-version": "1.0.1"
+    },
+    "imports": [
+      {
+        "href": "https://gist.githubusercontent.com/aj-stein-nist/673be6063e8968ce332a8cbdfdf3f7de/raw/4ac112a4e34564cf48fb3db5b47917eb054a7df8/NIST_SP-800-53_rev5_catalog.xml",
+        "include-all": {}
+      }
+    ],
+    "merge": {
+      "combine": {
+        "method": "keep"
+      },
+      "as-is": true
+    },
+    "back-matter": {}
+  }
+}
