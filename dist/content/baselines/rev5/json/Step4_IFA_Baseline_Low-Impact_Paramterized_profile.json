@@ -1,0 +1,51 @@
+{
+  "profile": {
+    "uuid": "0739d679-485a-4623-bf98-1db74031c8b6",
+    "metadata": {
+      "title": "Important Federal Agency Baseline - Low Impact",
+      "published": "2022-02-26T12:00:00.000005Z",
+      "last-modified": "2022-02-26T12:00:00.000005Z",
+      "version": "0.0.1",
+      "oscal-version": "1.0.1"
+    },
+    "imports": [
+      {
+        "href": "https://raw.githubusercontent.com/usnistgov/oscal-content/main/nist.gov/SP800-53/rev5/xml/NIST_SP-800-53_rev5_catalog.xml",
+        "include-controls": [
+          {
+            "with-ids": [
+              "ac-1"
+            ]
+          }
+        ]
+      }
+    ],
+    "merge": {
+      "combine": {
+        "method": "keep"
+      },
+      "as-is": true
+    },
+    "modify": {
+      "set-parameters": [
+        {
+          "param-id": "ac-01_odp.05",
+          "constraints": [
+            {
+              "description": "at least every 2 years"
+            }
+          ]
+        },
+        {
+          "param-id": "ac-01_odp.07",
+          "constraints": [
+            {
+              "description": "at least semi-annually"
+            }
+          ]
+        }
+      ]
+    },
+    "back-matter": {}
+  }
+}
