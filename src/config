@@ -1,0 +1,2 @@
+# path to source|format of source|model of source|format(s) to convert to
+src/content/baselines/rev5/xml/*profile.xml|xml|profile|json
